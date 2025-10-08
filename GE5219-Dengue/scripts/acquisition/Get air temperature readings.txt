@@ -1,0 +1,36 @@
+Get air temperature readings across Singapore​
+https://api-open.data.gov.sg/v2/real-time/api/air-temperature
+
+Has per-minute readings from NEA
+Filter for specific date or date-time by providing date in query parameter.
+use YYYY-MM-DD format to retrieve all of the readings for that day
+use YYYY-MM-DDTHH:mm:ss to retrieve the latest readings at that moment in time
+example: ?date=2024-07-16 or ?date=2024-07-16T23:59:00
+If date is not provided in query parameter, API will return the latest reading
+Unit of measure for readings is °C
+Query Parameters
+date
+string
+Format: YYYY-MM-DD or YYYY-MM-DDTHH:MM:SS (SGT). Example: 2024-07-16 or 2024-07-16T23:59:00
+
+paginationToken
+string
+Pagination token for retrieving subsequent data pages (only exists when there is a next page available for requests with date filters)
+
+Headers
+x-api-key
+string
+API key for higher rate limits (optional)
+
+Responses
+Expand
+200
+Air Temperature Information
+application/json
+Expand
+400
+Invalid HTTP request body
+application/json
+Expand
+404
+Weather data not found

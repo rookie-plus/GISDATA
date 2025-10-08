@@ -1,0 +1,24 @@
+{
+  "nea": {
+    "dengue_clusters": {
+      "dataset_id": "d_dbfabf16158d1b0e1c420627c0819168",
+      "base_url": "https://api-open.data.gov.sg/v1/public/api/datasets",
+      "description": "NEA dengue cluster data - Red (>=10 cases), Yellow (<10 cases), Green (surveillance)"
+    }
+  },
+  "weather": {
+    "air_temperature": {
+      "url": "https://api-open.data.gov.sg/v2/real-time/api/air-temperature",
+      "description": "Real-time air temperature readings from weather stations"
+    },
+    "rainfall": {
+      "url": "https://api-open.data.gov.sg/v2/real-time/api/rainfall",
+      "description": "Real-time rainfall readings from weather stations"
+    }
+  },
+  "satellite": {
+    "provider": "sentinel_hub",
+    "api_key": "",
+    "description": "Satellite imagery for NDVI calculation"
+  }
+}
