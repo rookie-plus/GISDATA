@@ -1,24 +1,33 @@
 {
-  "nea": {
-    "dengue_clusters": {
-      "dataset_id": "d_dbfabf16158d1b0e1c420627c0819168",
-      "base_url": "https://api-open.data.gov.sg/v1/public/api/datasets",
-      "description": "NEA dengue cluster data - Red (>=10 cases), Yellow (<10 cases), Green (surveillance)"
-    }
-  },
-  "weather": {
-    "air_temperature": {
-      "url": "https://api-open.data.gov.sg/v2/real-time/api/air-temperature",
-      "description": "Real-time air temperature readings from weather stations"
+    "nea": {
+        "dengue_clusters": {
+            "dataset_id": "d_dbfabf16158d1b0e1c420627c0819168",
+            "base_url": "https://api-open.data.gov.sg/v1/public/api/datasets",
+            "description": "NEA dengue cluster data - Red (>=10 cases), Yellow (<10 cases), Green (surveillance)"
+        },
+        "population_by_subzone": {
+            "dataset_id": "d_e7ae90176a68945837ad67892b898466",
+            "base_url": "https://data.gov.sg/api/action/datastore_search?resource_id",
+            "description": "Population count by subzone (Singapore Residents)"
+        },
+        "subzone_boundaries": {
+            "dataset_id": "d_8594ae9ff96d0c708bc2af633048edfb",
+            "base_url": "https://api-open.data.gov.sg/v1/public/api/datasets",
+            "description": "URA Master Plan 2019 subzone boundary polygons"
+        }
     },
-    "rainfall": {
-      "url": "https://api-open.data.gov.sg/v2/real-time/api/rainfall",
-      "description": "Real-time rainfall readings from weather stations"
+
+    "weather": {
+        "air_temperature": {
+            "url": "https://api-open.data.gov.sg/v2/real-time/api/air-temperature",
+            "description": "Real-time air temperature readings from weather stations"
+        },
+        "rainfall": {
+            "url": "https://api-open.data.gov.sg/v2/real-time/api/rainfall",
+            "description": "Real-time rainfall readings from weather stations"
+        }
+    },
+    "satellite": {
+        
     }
-  },
-  "satellite": {
-    "provider": "sentinel_hub",
-    "api_key": "",
-    "description": "Satellite imagery for NDVI calculation"
-  }
 }
