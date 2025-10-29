@@ -1,13 +1,16 @@
+# just a demo, tbd
+
 #!/usr/bin/env python3
 
 # Minimal FastAPI application bootstrap for the dengue dashboard.
 
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
+# from fastapi import FastAPI
+#cfrom fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from typing import Dict
 
-APP = FastAPI(title="GE5219 Real-Time Dengue Map")
+#APP = FastAPI(title="GE5219 Real-Time Dengue Map")
+
 
 static_root = Path(__file__).parent / "visualization" / "static"
 APP.mount("/static", StaticFiles(directory=static_root), name="static")
